@@ -97,7 +97,7 @@ if($result):
         while($book = mysqli_fetch_assoc($result)):
            // print_r($book);
             ?>
-            <div class="col-sm-4 col-md-3">
+            <div class="col-sm-4 col-md-3"><!--this div is responsible for displaying each book in the shop along with it's relevant details-->
                <form method="post" action="cart.php?action=add&id=<?php echo $book['id']; ?>">
                   <div class="books">
                     <img src="<?php echo $book['image']; ?>" class="img-responsive"/>
